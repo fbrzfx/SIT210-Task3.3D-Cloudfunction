@@ -17,7 +17,7 @@ void setup() {
 }
 
 void myHandler(const char *event, const char *data){
-    if (data = "wave") {
+    if (strcmp(data, "wave")==0) {
         digitalWrite(led,HIGH);
         delay(1000);
         digitalWrite(led,LOW);
@@ -34,7 +34,7 @@ void myHandler(const char *event, const char *data){
         delay(500);
         
     }
-    else if (data = "pat"){
+    else if (strcmp(data, "pat")==0) {
         digitalWrite(led,HIGH);
         delay(500);
         digitalWrite(led,LOW);
